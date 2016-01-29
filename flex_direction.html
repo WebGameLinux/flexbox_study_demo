@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----flex-direction</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+        }
+        .flex_row{
+            display: flex;
+            flex-direction: row; /*主轴为水平方向,起点在左端*/
+        }
+        .flex_row_reverse{
+            display: flex;
+            flex-direction: row-reverse;/*主轴为水平方向,起点在右端*/
+        }
+        .flex_column{
+            display: flex;
+            flex-direction: column;/*主轴为垂直方向,起点在上端*/
+        }
+        .flex_column_reverse{
+            display: flex;
+            flex-direction: column-reverse;/*主轴为垂直方向,起点在下端*/
+        }
+        .flex_item{
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+    </style>
+</head>
+<body>
+    <p>flex-direction:row(default)</p>
+    <div class="flex flex_row">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item">three</div>
+    </div>
+
+    <p>flex-direction:flex_row_reverse</p>
+    <div class="flex flex_row_reverse">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item">three</div>
+    </div>
+
+    <p>flex-direction:column</p>
+    <div class="flex flex_column">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item">three</div>
+    </div>
+
+    <p>flex-direction:row_column_reverse</p>
+    <div class="flex flex_column_reverse">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item">three</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----flex-shrink</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .flex_item{
+            height: 80px;
+            width: 90px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .shrink{
+            flex-shrink: 3;     /*空间不足缩小为其他项目1/3*/
+        }
+    </style>
+</head>
+<body>
+<p>flex-shrink(default:1)</p>
+<div class="flex">
+    <div class="flex_item">1</div>
+    <div class="flex_item">1</div>
+    <div class="flex_item">1</div>
+    <div class="flex_item">1</div>
+    <div class="flex_item shrink">3</div>
+</div>
+</body>
+</html>

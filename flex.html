@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----flex</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .flex_item{
+            height: 80px;
+            width: 90px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .flex_flex {
+            flex: 1;    /*相当于flex-grow:1*/
+        }
+        .flex_auto{
+            flex: auto;  /*相当于1 1 auto*/
+        }
+        .flex_none{
+            flex: none;  /*相当于0 0 auto*/
+        }
+    </style>
+</head>
+<body>
+    <p>flex:1</p>
+    <div class="flex">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item flex_flex">three</div>
+    </div>
+    <p>flex:auto</p>
+    <div class="flex">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item flex_auto">three</div>
+    </div>
+    <p>flex:none</p>
+    <div class="flex">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item flex_none">three</div>
+    </div>
+</body>
+</html>

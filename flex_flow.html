@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----flex-flow</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row wrap-reverse; /*主轴为水平方向,起点在左端;换行,首行在下方*/
+        }
+        .flex_item{
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+    </style>
+</head>
+<body>
+    <p>flex-flow:row wrap_reverse</p>
+    <div class="flex">
+        <div class="flex_item">one</div>
+        <div class="flex_item">two</div>
+        <div class="flex_item">three</div>
+        <div class="flex_item">four</div>
+        <div class="flex_item">five</div>
+    </div>
+</body>
+</html>

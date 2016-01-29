@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----order</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .flex_item{
+            height: 80px;
+            width: 60px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .one{
+            order: 2;
+        }
+        .two{
+            order: 1;
+        }
+        .three{
+            order: 0;   /*第二个显示*/
+        }
+        .four{
+            order: 3
+        }
+        .five{
+            order: -1;  /*第一个显示*/
+        }
+    </style>
+</head>
+<body>
+<p>order</p>
+<div class="flex">
+    <div class="flex_item one">one</div>
+    <div class="flex_item two">two</div>
+    <div class="flex_item three">three</div>
+    <div class="flex_item four">four</div>
+    <div class="flex_item five">five</div>
+</div>
+</body>
+</html>

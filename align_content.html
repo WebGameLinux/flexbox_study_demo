@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----align-content</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .flex_start{
+            align-content: flex-start;  /*与交叉轴的起点对齐*/
+        }
+        .flex_end{
+            align-content: flex-end;    /*与交叉轴的终点对齐*/
+        }
+        .flex_center{
+            align-content: center;      /*与交叉中的中点对齐*/
+        }
+        .flex_stretch{
+            align-content: stretch;
+        }
+        .flex_between{
+            align-content: space-between;,
+        }
+        .flex_around{
+            align-content: space-around;
+        }
+        .flex_item{
+            height: 60px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .one{
+            width: 80px;
+        }
+        .two{
+            width: 50px;
+        }
+        .three{
+            width: 90px;
+        }
+        .four{
+            width: 70px;
+        }
+        .five{
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <p>align-content:flex_start</p>
+    <div class="flex flex_start">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+    <p>align-content:flex_end</p>
+    <div class="flex flex_end">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+    <p>align-content:flex_center</p>
+    <div class="flex flex_center">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+    <p>align-content:flex_stretch(default)</p>
+    <div class="flex flex_stretch">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+    <p>align-content:flex_between</p>
+    <div class="flex flex_between">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+    <p>align-content:flex_around</p>
+    <div class="flex flex_around">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+        <div class="flex_item four">four</div>
+        <div class="flex_item five">five</div>
+    </div>
+</body>
+</html>

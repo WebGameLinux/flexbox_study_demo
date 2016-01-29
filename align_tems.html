@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----align-items</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .flex_start{
+            align-items: flex-start;
+        }
+        .flex_end{
+            align-items: flex-end;
+        }
+        .flex_center{
+            align-items: center;
+        }
+        .flex_stretch{
+            align-items: stretch;
+        }
+        .flex_baseline{
+            align-items: baseline;,
+        }
+        .flex_item{
+            width: 80px;
+            margin: 0px 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .one{
+            height: 80px;
+        }
+        .two{
+            height: 50px;
+        }
+        .three{
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <p>align-items:flex_start</p>
+    <div class="flex flex_start">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>align-items:flex_end</p>
+    <div class="flex flex_end">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>align-items:flex_center</p>
+    <div class="flex flex_center">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>align-items:flex_stretch</p>
+    <div class="flex flex_stretch">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>align-items:flex_baseline</p>
+    <div class="flex flex_baseline">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+</body>
+</html>

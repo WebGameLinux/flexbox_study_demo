@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----flex-basis</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .flex_item{
+            height: 80px;
+            width: 90px;
+            margin: 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .basis{
+            flex-basis: 55%;
+        }
+    </style>
+</head>
+<body>
+<p>flex-basis</p>
+<div class="flex">
+    <div class="flex_item">one</div>
+    <div class="flex_item">two</div>
+    <div class="flex_item">three</div>
+    <div class="flex_item">four</div>
+    <div class="flex_item basis">five</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox布局----justify-content</title>
+    <style>
+        .flex{
+            width: 350px;
+            height: 200px;
+            border: 1px solid #555;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .flex_start{
+            justify-content: flex-start; /*左对齐*/
+        }
+        .flex_end{
+            justify-content: flex-end;  /*右对齐*/
+        }
+        .flex_center{
+            justify-content: center;   /*居中对齐*/
+        }
+        .flex_between{
+            justify-content: space-between; /*平均分布在主轴上,开始位置为主轴起始点,结束位置为主轴终点*/
+        }
+        .flex_around{
+            justify-content: space-around; /*平均分布在主轴上,但是两端保留一半的空间*/
+        }
+        .flex_item{
+            height: 80px;
+            margin: 0px 5px;
+            background : #009246;
+
+            display: flex;
+            align-items: center;    /*垂直居中*/
+            justify-content: center;  /*水平居中*/
+        }
+        .one{
+            width: 80px;
+        }
+        .two{
+            width: 50px;
+        }
+        .three{
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <p>justify-content:flex_start(default)</p>
+    <div class="flex flex_start">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>justify-content:flex_end</p>
+    <div class="flex flex_end">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>justify-content:center</p>
+    <div class="flex flex_center">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>justify-content:flex_between</p>
+    <div class="flex flex_between">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+    <p>justify-content:flex_around</p>
+    <div class="flex flex_around">
+        <div class="flex_item one">one</div>
+        <div class="flex_item two">two</div>
+        <div class="flex_item three">three</div>
+    </div>
+</body>
+</html>
