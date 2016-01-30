@@ -1,7 +1,7 @@
 # Flexbox布局
 
 学习Flexbox布局。书上给出的图片不是十分理解，下图更容易理解：
-![Alt text](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png)
+![Alt text](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png)  
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
 项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size
 
